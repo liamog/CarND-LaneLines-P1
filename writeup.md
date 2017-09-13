@@ -52,18 +52,6 @@ Remove noise in the image.
 ###### 4. - Mask region of interest
 In this case I just provided an easy mechanism to adjust this based on specifying
 percentage range of the height of the image required and width percent ranges for the apex width.
-   <text>
-     +---------------------------+
-     |                           |
-     |  x1,y_min      x2,y_min   |
-     |      /------------\       |
-     |     /              \      |
-     |    /                \     |
-     |   /                  \    |
-     |  / 0,y_max   x_max, y_max |
-     | ------------------------  |
-     +---------------------------+
-   </text>
 
 So the image looks like this.
 ![Masked][masked]
