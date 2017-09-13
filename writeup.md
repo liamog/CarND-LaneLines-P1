@@ -28,7 +28,7 @@ The goals / steps of this project are the following:
 ### Pipeline
 
 My pipeline consisted of 5 steps.
-### 1 - Grayscale
+###### 1 - Grayscale
 Initially just used a simple conversion to grayscale. This worked well until I tried the final challenge.
 This is an example of a yellow line on a light gray road surface.
 ![Yellow curved line easy to see in color][input_curve2]
@@ -41,33 +41,43 @@ This is an example of a yellow line on a light gray road surface.
 ![Yellow curved line easier to see in grayscale][good_gray_scale]
 
 This did introduce more noise in the image though.
-
-### 2 - Blur
+###### 2. - Blur
 Remove noise in the image.
 ![Blurred][blur]
 
 
-###3 - Edge detection
+###### 3. - Edge detection
 ![Edges][edges]
 
-###4 - Mask region of interest
+###### 4. - Mask region of interest
 In this case I just provided an easy mechanism to adjust this based on specifying
-y percent of the image required and x percent ranges for the apex width
+percentage range of the height of the image required and width percent ranges for the apex width.
+   <text>
+     +---------------------------+
+     |                           |
+     |  x1,y_min      x2,y_min   |
+     |      /------------\       |
+     |     /              \      |
+     |    /                \     |
+     |   /                  \    |
+     |  / 0,y_max   x_max, y_max |
+     | ------------------------  |
+     +---------------------------+
+   </text>
 
 So the image looks like this.
 ![Masked][masked]
 
-###5 Extract hough lines
+###### 5. Extract hough lines
+
 I modified the code significantly here. Instead of just extracting the lines
 and immediately drawing them, I extracted them as lines then processed them
 with various approaches so I could visually compare the results.
 
-I provide 3 versions of draw_lines.
+I provided 3 different implementations of draw_lines.
 
 1) Raw - just draw the lines as detected by hough
 ![Raw][raw]
-
-
 
 2) Averaged - separate by left and right by position in the image and slope of line. Then
    extrapolate based on an average of slope and y-intercept and draw from min_y to max_y
@@ -77,6 +87,8 @@ I provide 3 versions of draw_lines.
    into an array of points then use polyfit to do a linear regression on the points to find
    the fitted line.
 ![Fitted][fitted]
+
+Final video is [here](https://github.com/liamog/CarND-LaneLines-P1/tree/master/test_videos_output)
 
 
 ### 2. Identify potential shortcomings with your current pipeline
