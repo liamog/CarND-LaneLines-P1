@@ -10,17 +10,16 @@ The goals / steps of this project are the following:
 
 
 [//]: # (Image References)
-
-[input_curve2]: ./write_up_images/curve2.jpg "YellowLine"
-[bad_gray_scale]: ./write_up_images/curve2.jpg/gray_bad_yellow_contrast.jpg "Bad Gray"
-[good_gray_scale]: ./write_up_images/curve2.jpg/gray_good_yellow_contrast.jpg "Good Gray"
-[blur]: ./write_up_images/curve2.jpg/blur.jpg "Blurred"
-[edges]: ./write_up_images/curve2.jpg/edges.jpg "Edges"
-[masked]: ./write_up_images/curve2.jpg/masked.jpg "Masked"
-[raw]: ./write_up_images/curve2.jpg/raw.jpg "Raw"
-[average]: ./write_up_images/curve2.jpg/average.jpg "Average"
-[fitted]: ./write_up_images/curve2.jpg/interp.jpg "Fitted"
-[final]: ./write_up_images/curve2.jpg/final.jpg "Final"
+[input_curve2]: https://github.com/liamog/CarND-LaneLines-P1/blob/master/test_images/curve2.jpg "YellowLine"
+[bad_gray_scale]: https://github.com/liamog/CarND-LaneLines-P1/blob/master/writeup_images/curve2.jpg/gray_bad_yellow_contrast.jpg "Bad Gray"
+[good_gray_scale]: https://github.com/liamog/CarND-LaneLines-P1/blob/master/writeup_images/curve2.jpg/gray_good_yellow_contrast.jpg "Good Gray"
+[blur]: https://github.com/liamog/CarND-LaneLines-P1/blob/master/writeup_images/curve2.jpg/blur.jpg "Blurred"
+[edges]: https://github.com/liamog/CarND-LaneLines-P1/blob/master/writeup_images/curve2.jpg/edges.jpg "Edges"
+[masked]: https://github.com/liamog/CarND-LaneLines-P1/blob/master/writeup_images/curve2.jpg/masked.jpg "Masked"
+[raw]: https://github.com/liamog/CarND-LaneLines-P1/blob/master/writeup_images/curve2.jpg/raw.jpg "Raw"
+[average]: https://github.com/liamog/CarND-LaneLines-P1/blob/master/writeup_images/curve2.jpg/average.jpg "Average"
+[fitted]: https://github.com/liamog/CarND-LaneLines-P1/blob/master/writeup_images/curve2.jpg/interp.jpg "Fitted"
+[final]: https://github.com/liamog/CarND-LaneLines-P1/blob/master/writeup_images/curve2.jpg/final.jpg "Final"
 
 ---
 
